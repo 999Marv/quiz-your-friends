@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my nature survey!</h1>
+    </header>
+    <form action="destination.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+
+        <label for="age">What is your age? (optional)</label>
+        <input type="number" name="age" id="age" placeholder="Enter your age" step='1' />
+
+        <label for="season">What is your favorite season?</label>
+        <select name="season" id="season" required>
+            <option disabled selected value>Select a season</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+        </select>
+
+        <h4>Pick your favorite animals! (choose all the apply)</h4>
+        <ul>
+            <li>
+                <label for="frogs">
+                    <input type="checkbox" name="frogs" id="frogs" /> Frogs
+            </li>
+            </label>
+            <li>
+                <label for="eagles">
+                    <input type="checkbox" name="eagles" id="eagles" /> Eagles
+                </label>
+            </li>
+            <li>
+                <label for="Sharks">
+                    <input type="checkbox" name="Sharks" id="Sharks" /> Sharks
+                </label>
+            </li>
+            <li>
+                <label for="rabbits">
+                    <input type="checkbox" name="rabbits" id="rabbits" /> Rabbits
+                </label>
+            </li>
+            <li>
+                <label for="dogs">
+                    <input type="checkbox" name="dogs" id="dogs" /> Dogs
+                </label>
+            </li>
+            <li>
+                <label for="cats">
+                    <input type="checkbox" name="cats" id="cats" /> Cats
+                </label>
+            </li>
+        </ul>
+
+        <h4>Pick your favorite flower!</h4>
+        <label for="dandelion">
+            <input type="radio" name="dandelion" id="dandelion" /> Dandelion
+        </label>
+        <label for="roses">
+            <input type="radio" name="roses" id="roses" /> Roses
+        </label>
+
+        <label for="tulips">
+            <input type="radio" name="tulips" id="tulips" /> Tulips
+        </label>
+
+        <label for="daisy">
+            <input type="radio" name="daisy" id="daisy" /> Daisy
+        </label>
+        
+        <h4>Would you like me to add any other options? Write down below!</h4>
+        <textarea name="suggestions" placeholder="Write your suggestions here" id="suggestions" rows='5' cols="50"></textarea>
+        
+        <input type="submit"/>
+    </form>
+</body>
+
+</html>
